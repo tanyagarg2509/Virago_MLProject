@@ -22,7 +22,7 @@ The data is a CSV with emoticons removed. Data file format has 6 fields: <br />
 5 - the text of the tweet (Lyx is cool) <br />
 
 #### 2. Waseem and Hovy's dataset
- Original paper: https://www.aclweb.org/anthology/N16-2013.pdf
+ Original paper: https://www.aclweb.org/anthology/N16-2013.pdf </br>
  Replicated (original explained): http://lrec-conf.org/workshops/lrec2018/W25/pdf/2_W25.pdf
  
  This dataset is considered as a benchmark for hate speech detection on social media platforms.

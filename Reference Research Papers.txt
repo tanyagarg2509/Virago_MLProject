@@ -1,0 +1,4 @@
+- Woman Harassment in Digital Space in India (Shweta Sankhwar, Arvind Chaturvedi)
+- Understanding and fighting bullying with machine learning (Junming Sui)
+- Hybrid deep learning model for cyberbullying detection on social multimodal data (Mudita Saxena)
+- The Hateful Memes Challenge: Detecting Hate Speech in Multimodal Memes (Facebook AI Challenge) 

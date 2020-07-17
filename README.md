@@ -5,3 +5,6 @@ Refer this doc for Project Idea & Git Commands : https://docs.google.com/documen
 
 Data Colection from :-
 1)  https://www.aclweb.org/anthology/W19-3509.pdf
+
+Analyzing the hate and counter speech accounts on twitter ->
+https://arxiv.org/pdf/1812.02712.pdf

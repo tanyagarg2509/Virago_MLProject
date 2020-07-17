@@ -10,3 +10,4 @@ Kristine M. Rogers, Lisa Rogers, Meghna Sardana Sarin, Gaurav Shahane, Jayanee T
 Priyanka Vengataraman, Zijian Wan, Derek Michael Wu)
    
    This dataset contains 35,000 tweets but are not available publically. We can request access by emailing to jgolbeck@umd.edu
+   We can request Hitkul Sir to tell the procedure of acquiring the data. 

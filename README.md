@@ -8,3 +8,5 @@ Data Colection from :-
 
 Analyzing the hate and counter speech accounts on twitter ->
 https://arxiv.org/pdf/1812.02712.pdf
+
+Dataset for youtube Data :-  https://arxiv.org/ftp/arxiv/papers/1812/1812.08046.pdf

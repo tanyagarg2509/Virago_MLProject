@@ -1,0 +1,13 @@
+- Woman Harassment in Digital Space in India (Shweta Sankhwar, Arvind Chaturvedi)
+- Understanding and fighting bullying with machine learning (Junming Sui)
+- Hybrid deep learning model for cyberbullying detection on social multimodal data (Mudita Saxena)
+- The Hateful Memes Challenge: Detecting Hate Speech in Multimodal Memes (Facebook AI Challenge) 
+- A large human labeled corpus for online haraassment research (Jennifer Golbeck, Zahra Ashktorab, Rashad O. Banjo, Alexandra Berlinger, Siddharth Bhagwan,
+Cody Buntain, Paul Cheakalos, Alicia A Geller, Quint Gergory, Rajesh Kumar Gnanasekaran,
+Raja Rajan Gunasekaran, Kelly M. Hoffman, Jenny Hottle, Vichita Jienjitlert, Shivika Khare,
+Ryan Lau, Marianna J. Martindale, Shalmali Naik, Heather L, Nixon, Piyush Ramachandran,
+Kristine M. Rogers, Lisa Rogers, Meghna Sardana Sarin, Gaurav Shahane, Jayanee Thanki,
+Priyanka Vengataraman, Zijian Wan, Derek Michael Wu)
+   
+   This dataset contains 35,000 tweets but are not available publically. We can request access by emailing to jgolbeck@umd.edu
+   We can request Hitkul Sir to tell the procedure of acquiring the data. 

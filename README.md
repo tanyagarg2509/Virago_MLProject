@@ -10,7 +10,7 @@ Refer this doc for Project Idea & Git Commands : https://docs.google.com/documen
 
 ## Datasets 
 
-#### 1. Twitter sentiment analysis dataset (too large to push)
+#### 1. Twitter sentiment analysis dataset (too large to push)   //UNABLE TO OPEN
 link: http://help.sentiment140.com/for-students/
 ###### About the data:
 The data is a CSV with emoticons removed. Data file format has 6 fields: <br />
@@ -21,7 +21,7 @@ The data is a CSV with emoticons removed. Data file format has 6 fields: <br />
 4 - the user that tweeted (robotickilldozr) <br />
 5 - the text of the tweet (Lyx is cool) <br />
 
-#### 2. Waseem and Hovy's dataset
+#### 2. Waseem and Hovy's dataset   //USELESS (MOST TWEETS DELETED)
  Original paper: https://www.aclweb.org/anthology/N16-2013.pdf </br>
  Replicated (original explained): http://lrec-conf.org/workshops/lrec2018/W25/pdf/2_W25.pdf
  

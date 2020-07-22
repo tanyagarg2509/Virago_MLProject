@@ -1,6 +1,7 @@
 # MLPROJECT
 Project - VIRAGO
 
+<<<<<<< HEAD
 Refer this doc for Project Idea & Git Commands : https://docs.google.com/document/d/1OFZ-fqkGMW72NJdqxFB9iqIDaS-VMYtJuy-vPr30PrU/edit?usp=sharing
 
 <<<<<<< HEAD
@@ -50,3 +51,17 @@ The data is a CSV with emoticons removed. Data file format has 6 fields: <br />
  This dataset is considered as a benchmark for hate speech detection on social media platforms.
 
 >>>>>>> Anshee
+=======
+### Twitter hate speech detection
+Link for article: https://towardsdatascience.com/detecting-hate-tweets-twitter-sentiment-analysis-780d8a82d4f6
+
+Data citations are given in the article itself.
+>>>>>>> Anshee
+-----
+
+### Formspring Data Cleaning
+link with highlights: file:///home/sanchita/Downloads/1808.00926%20(1).pdf
+### About the data
+Each sample was labelled by 3 annotators with “yes” and “no” answers for a question if it contains cyberbullying. The cyberbullying was also tagged for severity from 0 (no bullying) to 10. A post was considered harmful if at least two out of three annotators answered “yes” for the primary question.
+ 
+

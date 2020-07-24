@@ -3,5 +3,5 @@ $bgcolorgradient2:#FFFEFF;
 $btncolor:#FD98A7;
 
 body{
-    background-image: linear-gradient(to bottom left,black,$bgcolorgradient2);
+    background-image: linear-gradient(to bottom left,$bgcolorgradient1,$bgcolorgradient2);
 }

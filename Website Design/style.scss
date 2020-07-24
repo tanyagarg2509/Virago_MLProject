@@ -3,5 +3,33 @@ $bgcolorgradient2:#FFFEFF;
 $btncolor:#FD98A7;
 
 body{
-    background-image: linear-gradient(to bottom left,$bgcolorgradient1,$bgcolorgradient2);
+    background-color: $bgcolorgradient1;
+    background-repeat:no-repeat;
+    height:100%;
+    margin:0;
+}
+
+.leftRectangle{
+    height:100%;
+    border-radius:5px;
+    width:90%;
+    background-color: $bgcolorgradient2;
+    position:fixed;
+    right:50%;
+    z-index:1;
+}
+
+.borderRectangle{
+    border: 10px solid $btncolor;
+    border-radius:8px;
+    z-index:2;
+    height:90%;
+    position:fixed;
+    width:90%;
+    right:50%;
+    margin-right:-45%;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    z-index: 2;
+    
 }

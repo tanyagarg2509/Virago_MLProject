@@ -1,5 +1,31 @@
 body {
-  background-image: -webkit-gradient(linear, right top, left bottom, from(black), to(#FFFEFF));
-  background-image: linear-gradient(to bottom left, black, #FFFEFF);
+  background-color: #FFE1E0;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+}
+
+.leftRectangle {
+  height: 100%;
+  border-radius: 5px;
+  width: 90%;
+  background-color: #FFFEFF;
+  position: fixed;
+  right: 50%;
+  z-index: 1;
+}
+
+.borderRectangle {
+  border: 10px solid #FD98A7;
+  border-radius: 8px;
+  z-index: 2;
+  height: 90%;
+  position: fixed;
+  width: 90%;
+  right: 50%;
+  margin-right: -45%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  z-index: 2;
 }
 /*# sourceMappingURL=style.css.map */

@@ -30,12 +30,12 @@ from tweepy.parsers import JSONParser
 ####### Access Information #################
 
 # Parameter you need to specify
-consumer_key = ''
-consumer_secret = ''
+consumer_key = 'IJBXd9Lxnwmdvtz3VqDyD2DHQ'
+consumer_secret = 'xGOwKsJxSbWZqcjR9cMAMuT59IiIrbfZ8gUWEnyG8Yqg7ZplzG'
 access_key = ''
 access_secret = ''
 
-inputFile = 'tweet_id'
+inputFile = 'tweet_id.txt'
 outputFile = 'tweet.json'
 
 #############################################

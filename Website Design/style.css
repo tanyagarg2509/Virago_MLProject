@@ -20,12 +20,16 @@ body {
   border-radius: 8px;
   z-index: 2;
   height: 90%;
-  position: fixed;
+  position: relative;
   width: 90%;
   right: 50%;
   margin-right: -45%;
   margin-top: 2rem;
   margin-bottom: 2rem;
   z-index: 2;
+}
+
+.navbar {
+  z-index: 3;
 }
 /*# sourceMappingURL=style.css.map */

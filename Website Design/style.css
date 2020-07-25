@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 body {
   background-color: #FFE1E0;
   background-repeat: no-repeat;
@@ -31,5 +32,27 @@ body {
 
 .navbar {
   z-index: 3;
+  margin-left: 45%;
+}
+
+.navbar li {
+  list-style-type: none;
+  float: left;
+  padding-right: 4px;
+  padding-left: 4px;
+  margin-right: 4px;
+  /*border:1px solid $btncolor;
+        border-radius:6px;*/
+  font-family: "Bebas Neue", cursive;
+  color: #FD98A7;
+  font-size: 1.5rem;
+}
+
+.navbar li:hover {
+  color: white;
+  background-color: #FD98A7;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=style.css.map */

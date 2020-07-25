@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 $bgcolorgradient1:#FFE1E0;
 $bgcolorgradient2:#FFFEFF;
 $btncolor:#FD98A7;
-
+$navbarFont:'Bebas Neue', cursive;
 body{
     background-color: $bgcolorgradient1;
     background-repeat:no-repeat;
@@ -36,4 +37,24 @@ body{
 
 .navbar{
     z-index:3;
+    margin-left:45%;
+    li{
+        list-style-type:none;
+        float:left;
+        padding-right:4px;
+        padding-left:4px;
+        margin-right:4px;
+        /*border:1px solid $btncolor;
+        border-radius:6px;*/
+        font-family:$navbarFont;
+        color:$btncolor;
+        font-size:1.5rem;
+    }
+    li:hover{
+        color:white;
+        background-color: $btncolor;
+        cursor: pointer;
+        border-radius:6px;
+        font-size:1.8rem;
+    }
 }

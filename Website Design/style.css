@@ -30,9 +30,12 @@ body {
   z-index: 2;
 }
 
+.content {
+  margin-left: 45%;
+}
+
 .navbar {
   z-index: 3;
-  margin-left: 45%;
 }
 
 .navbar li {

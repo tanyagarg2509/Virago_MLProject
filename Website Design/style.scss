@@ -35,10 +35,12 @@ body{
     
 }
 
+.content {
+    margin-left:45%;
+}
 .navbar{
     z-index:3;
-    margin-left:45%;
-    li{
+        li{
         list-style-type:none;
         float:left;
         padding-right:4px;

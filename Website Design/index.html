@@ -1,38 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="stylesheet" href="style.css.map" />
-    <link rel="stylesheet" href="style.scss" />
-  </head>
-  <body>
-    <!--Part of the design, don't alter-->
-    <div class="leftRectangle">
-      <div class="content">
-        <!--Navbar-->
-        <div class="navbar">
-          <ul>
-            <li>Introduction</li>
-            <li>About</li>
-            <li>Approach</li>
-            <li>Extension</li>
-            <li>Mentors</li>
-            <li>Team</li>
-            <li>Links</li>
-            <li>Documentation</li>
-          </ul>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100" class="container-fluid">
+    <!-- navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+          </button>
+                <a class="navbar-brand" id="mainHeading" href="#">VIRAGO</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#section1">About The Project</a></li>
+                        <li><a href="#section2">Team</a></li>
+                        <li><a href="#section3">Mentors</a></li>
+                        <li><a href="#section4">Code</a></li>
+                        <li><a href="#section5">HELLOO</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        
-        <div id="about">
-            <h1>About The Project</h1>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Front Page -->
+    <div id="section" class="container-fluid">
+        <div class="flex-container">
+            <div class="topic">
+                HATE SPEECH DETECTION
+            </div>
+        </div>
+        <div class="flex-container1">
+            <form class="form-horizontal" action="/action_page.php">
+                <div class="form-group searchButton">
+
+                    <div class="col-sm-11">
+                        <input type="text" style="display: inline-block;" autocomplete="off" class="form-control" id="search" placeholder="Enter Your Query....">
+                    </div>
+                    <label class="control-label col-sm-1" id="myIcon" onClick="mySearchQuery();" for="search"><i class="fa fa-search"></i></label>
+                </div>
+            </form>
         </div>
     </div>
+    <!-- section 1 -->
+    <div id="section1" class="container-fluid">
+        <div class="topic">About The Project</div>
+
     </div>
-    <!--Part of the design, don't alter, in consideration not entirely sure about this border rectangle
-   <div class="borderRectangle">
-   </div>
-   -->
-  </body>
+
+    <!-- section 2 -->
+    <div id="section2" class="container-fluid">
+        <div class="topic">OUR TEAM</div>
+        <div class="team-flex-container">
+            <div class="card" id="">
+                <img src="tanya.jpg" alt="" style="width:150px; height:150px">
+                <div class="my-container">
+                    <h3>Tanya Garg</h3>
+                    <div class="post">MCA, IGDTUW</div>
+                </div>
+            </div>
+            <div class="card" id="">
+                <img src="pooja.jpg" alt="" style="width:150px; height:150px">
+                <div class="my-container">
+                    <h3>Pooja Gera</h3>
+                    <div class="post">B.TECH, IGDTUW</div>
+                </div>
+            </div>
+            <div class="card" id="">
+                <img src="tusharika.jpg" alt="" style="width:150px; height:150px">
+                <div class="my-container">
+                    <h3>Tusharika</h3>
+                    <div class="post">B.TECH, IGDTUW</div>
+                </div>
+            </div>
+            <div class="card" id="">
+                <img src="anshee.jpg" alt="" style="width:150px; height:150px">
+                <div class="my-container">
+                    <h3>Anshee Mongia</h3>
+                    <div class="post">B.TECH, IGDTUW</div>
+                </div>
+            </div>
+            <div class="card" id="">
+                <img src="sanchita.jpg" alt="" style="width:150px; height:150px">
+                <div class="my-container">
+                    <h3>Sanchita</h3>
+                    <div class="post">B.TECH, IGDTUW</div>
+                </div>
+            </div>
+            <div class="card" id="">
+                <img src="anjali.jpg" alt="" style="width:150px; height:150px">
+                <div class="my-container">
+                    <h3>Anjali</h3>
+                    <div class="post"> PhD, Kannur University</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--  section 3 -->
+    <div id="section3" class="container-fluid">
+        <div class="topic">OUR MENTORS</div>
+        <div class="team-flex-container">
+            <div class="card" id="">
+                <img src="Rishabh.jpg" alt="" style="width:150px; height:150px">
+                <div class="my-container">
+                    <h3>Mr. Rishabh Kaushal</h3>
+                    <div class="post">Assistant Professor, <br>IT Dept IGDTUW</div>
+                </div>
+            </div>
+            <div class="card" id="">
+                <img src="hitkul.jpg" alt="" style="width:150px; height:150px">
+                <div class="my-container">
+                    <h3>Hitkul Jangra</h3>
+                    <div class="post">PhD Scholar <br>Supported by Government of India</div>
+                </div>
+            </div>
+            <div class="card" id="">
+                <img src="saurabh.jpg" alt="" style="width:150px; height:150px">
+                <div class="my-container">
+                    <h3>Saurabh Gupta</h3>
+                    <div class="post">ABB Ph.D. Fellow</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- section 4  -->
+    <div id="section4" class="container-fluid">
+        <div class="topic">Hello</div>
+
+    </div>
+
+    <!-- section 5 -->
+    <div id="section5" class="container-fluid">
+        <div class="topic">THANKYOUUUU</div>
+
+    </div>
+    <footer>
+        <h4 id="footerTitle">Made with ❤️ by team VIRAGO</h4>
+    </footer>
+</body>
+
 </html>

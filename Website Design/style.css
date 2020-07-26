@@ -17,7 +17,9 @@ a:hover {
 }
 
 .navbar {
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    padding: 0 10px;
+    padding-top: 5px;
 }
 
 
@@ -39,6 +41,7 @@ a:hover {
     font-size: 2rem;
     margin-right: 30px;
     border-radius: 5px;
+    height: 100%;
 }
 
 .navbar-inverse .navbar-nav li a:hover {
@@ -60,7 +63,7 @@ a:hover {
     padding-top: 100px;
     height: 100vh;
     color: #fff;
-    background-image: url('original.gif');
+    background-image: url('background.gif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -198,26 +201,18 @@ a:hover {
     /* background-image: url('white.jpg'); */
 }
 
-
-/* #mainRow {
-    margin: 0px;
-    padding: 0px;
-} */
-
-
-/* .navbar li {
+#footerTitle {
+    padding: 20px;
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+    line-height: 30px;
+    text-align: center;
     font-family: "Bebas Neue", cursive;
-    color: #FD98A7;
-    font-size: 1.5rem;
+    background-color: black;
+    margin-bottom: 0px;
 }
 
-.navbar li:hover {
-    color: white;
-    background-color: #FD98A7;
-    cursor: pointer;
-    border-radius: 6px;
-    font-size: 1.8rem;
-} */
-
-
-/*# sourceMappingURL=style.css.map */
+#footerTitle:hover {
+    color: #FD98A7;
+}

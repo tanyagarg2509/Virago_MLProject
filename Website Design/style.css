@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 body {
     position: relative;
 }
@@ -22,6 +24,13 @@ a:hover {
     padding-top: 5px;
 }
 
+p,h4{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+    font-family: "Bebas Neue", cursive;
+}
 
 /* nav heading left */
 
@@ -63,7 +72,7 @@ a:hover {
     padding-top: 100px;
     height: 100vh;
     color: #fff;
-    background-image: url('background.gif');
+    background-image: url('background2.gif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,6 +117,11 @@ a:hover {
     border: black;
 }
 
+.input:focus {
+    outline: none !important;
+    border:2px solid #FD98A7;
+    box-shadow: 0 0 10px white;
+}
 
 /* ABOUT US SECTION */
 
@@ -121,14 +135,42 @@ a:hover {
     background-size: cover;
 }
 
+.gradientFont{
+   background: -webkit-linear-gradient(left,#fd98a7, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+.flex-container-about{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    align-items:center;
+}
+
+.flex-image{
+    order:1;
+    flex-grow: 1;
+    margin:1rem;
+}
+.flex-content{
+    order:2;
+    flex-grow:5;
+    color:black;
+    margin:1rem;
+}
+
+mark{
+    color:#fd98a7;
+    opacity: 1;
+}
 /* TEAM SECTION */
-
+  
 #section2 {
     padding-top: 50px;
     padding-bottom: 50px;
     min-height: 100vh;
-    color: #fff;
+    color:black;
     background-image: url('rm21-color-sasi-02_1.jpg');
     background-position: center;
     background-repeat: repeat;
@@ -176,7 +218,7 @@ a:hover {
     padding-top: 50px;
     padding-bottom: 50px;
     height: 100vh;
-    color: #fff;
+    color:black;
     background-color: white;
     /* background-image: url('white.jpg'); */
 }
@@ -215,4 +257,126 @@ a:hover {
 
 #footerTitle:hover {
     color: #FD98A7;
+}
+
+
+
+
+/*OUR TEAM CARDS STYLE*/
+.flex-container-team{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    align-items:center;
+}
+  .our-team {
+    padding: 30px 0 40px;
+    margin-bottom: 30px;
+    background-color: #f7f5ec;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    width:200px;
+    height:350px;
+  }
+  
+  .our-team .picture {
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .our-team .picture::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #fd98a7;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+  }
+  
+  .our-team:hover .picture::before {
+    height: 100%;
+  }
+  
+  .our-team .picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fd98a7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .our-team .picture img {
+    /*width: 100%;
+    height: auto;*/
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+  }
+  
+  .our-team:hover .picture img {
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+  }
+  
+  .our-team .title {
+    display: block;
+    font-size: 15px;
+    color: #4e5052;
+    text-transform: capitalize;
+  }
+  
+  .our-team .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color:#fd98a7;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .our-team:hover .social {
+    bottom: 0;
+  }
+  
+  .our-team .social li {
+    display: inline-block;
+  }
+  
+  .our-team .social li a {
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
+  
+  .our-team .social li a:hover {
+    color: #fd98a7;
+    background-color: #f7f5ec;
+  }
+  
+.teamGif img{
+   margin:auto;
+   width:300px;
+   height:200px;
 }

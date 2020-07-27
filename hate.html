@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="25c00ea6-694a-4167-97e9-da45a7cb51eb" data-root-id="1409"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1622">
+          {"26489ad0-e9d9-4184-b53d-bf4cb85231dc":{"roots":{"references":[{"attributes":{"below":[{"id":"1420"}],"center":[{"id":"1422"},{"id":"1426"}],"left":[{"id":"1423"}],"plot_height":800,"plot_width":1400,"renderers":[{"id":"1444"}],"title":{"id":"1410"},"toolbar":{"id":"1434"},"x_range":{"id":"1412"},"x_scale":{"id":"1416"},"y_range":{"id":"1414"},"y_scale":{"id":"1418"}},"id":"1409","subtype":"Figure","type":"Plot"},{"attributes":{"data":{"top":{"__ndarray__":"AAAAAAAAXkAAAAAAAEBWQAAAAAAAAEJAAAAAAACAQUAAAAAAAAA+QAAAAAAAADtAAAAAAAAAOkAAAAAAAAA4QAAAAAAAADhAAAAAAAAAN0AAAAAAAAA1QAAAAAAAADRAAAAAAAAANEAAAAAAAAA0QAAAAAAAADNAAAAAAAAAMUAAAAAAAAAwQAAAAAAAADBAAAAAAAAAMEAAAAAAAAAwQA==","dtype":"float64","order":"little","shape":[20]},"x":["trump","allahsoil","hate","bigot","obama","brexit","blm","polit","maga","black","leadership","blacklivesmatt","misogynist","america","retweet","resist","altright","a","nazi","bigotri"]},"selected":{"id":"1476"},"selection_policy":{"id":"1475"}},"id":"1441","type":"ColumnDataSource"},{"attributes":{"axis":{"id":"1420"},"ticker":null},"id":"1422","type":"Grid"},{"attributes":{"overlay":{"id":"1433"}},"id":"1429","type":"BoxZoomTool"},{"attributes":{"axis_label":"Count","formatter":{"id":"1474"},"ticker":{"id":"1424"}},"id":"1423","type":"LinearAxis"},{"attributes":{},"id":"1432","type":"HelpTool"},{"attributes":{},"id":"1431","type":"ResetTool"},{"attributes":{"text":"Hate #"},"id":"1410","type":"Title"},{"attributes":{},"id":"1474","type":"BasicTickFormatter"},{"attributes":{},"id":"1421","type":"CategoricalTicker"},{"attributes":{},"id":"1424","type":"BasicTicker"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"top":{"field":"top"},"width":{"value":0.5},"x":{"field":"x"}},"id":"1442","type":"VBar"},{"attributes":{"axis_label":"Hashtags","formatter":{"id":"1472"},"ticker":{"id":"1421"}},"id":"1420","type":"CategoricalAxis"},{"attributes":{"data_source":{"id":"1441"},"glyph":{"id":"1442"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1443"},"selection_glyph":null,"view":{"id":"1445"}},"id":"1444","type":"GlyphRenderer"},{"attributes":{},"id":"1475","type":"UnionRenderers"},{"attributes":{"axis":{"id":"1423"},"dimension":1,"ticker":null},"id":"1426","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1427"},{"id":"1428"},{"id":"1429"},{"id":"1430"},{"id":"1431"},{"id":"1432"}]},"id":"1434","type":"Toolbar"},{"attributes":{},"id":"1416","type":"CategoricalScale"},{"attributes":{},"id":"1418","type":"LinearScale"},{"attributes":{},"id":"1427","type":"PanTool"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"1433","type":"BoxAnnotation"},{"attributes":{},"id":"1414","type":"DataRange1d"},{"attributes":{},"id":"1428","type":"WheelZoomTool"},{"attributes":{},"id":"1476","type":"Selection"},{"attributes":{},"id":"1430","type":"SaveTool"},{"attributes":{},"id":"1472","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"top"},"width":{"value":0.5},"x":{"field":"x"}},"id":"1443","type":"VBar"},{"attributes":{"source":{"id":"1441"}},"id":"1445","type":"CDSView"},{"attributes":{"factors":["trump","allahsoil","hate","bigot","obama","brexit","blm","polit","maga","black","leadership","blacklivesmatt","misogynist","america","retweet","resist","altright","a","nazi","bigotri"]},"id":"1412","type":"FactorRange"}],"root_ids":["1409"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1622').textContent;
+                  var render_items = [{"docid":"26489ad0-e9d9-4184-b53d-bf4cb85231dc","root_ids":["1409"],"roots":{"1409":"25c00ea6-694a-4167-97e9-da45a7cb51eb"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

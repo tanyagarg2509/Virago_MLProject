@@ -10,7 +10,7 @@ def requestResults(name):
     tweets = get_related_tweets(name)
     tweets['prediction'] = pipeline.predict(tweets['tweet_text'])
     data = str(tweets.prediction.value_counts()) + '\n\n'
-    return (data + str(tweets)).jsonify
+    return (data + str(tweets))
 
 
 app = Flask(__name__)

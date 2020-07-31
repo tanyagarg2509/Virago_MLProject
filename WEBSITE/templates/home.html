@@ -33,8 +33,8 @@
                             <li><a href="#section1">About The Project</a></li>
                             <li><a href="#section2">Team</a></li>
                             <li><a href="#section3">Mentors</a></li>
-                            <li><a href="#section4">Code</a></li>
-                            <li><a href="#section5">HELLOO</a></li>
+                            <li><a href="#section4">Presentation</a></li>
+                            <li><a href="#section5">Github Repo</a></li>
                         </ul>
                     </div>
                 </div>
@@ -326,16 +326,85 @@
     </div>
     <!-- section 3 end -->
 
+    <style>
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+        
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        .flip-card-front,
+        .flip-card-back {
+            background-color: #fd98a7;
+            color: black;
+            padding: 30px;
+            border-radius: 10px;
+            height: 350px;
+            width: 350px;
+        }
+        
+        .flip-card-back {
+            background-image: url('/static/rm21-color-sasi-02_1.jpg');
+            background-position: center;
+            background-repeat: repeat;
+            background-size: cover;
+            color: #fd98a7;
+            text-align: center;
+            font-weight: bolder;
+            transform: rotateY(180deg);
+        }
+    </style>
     <!-- section 4  -->
     <div id="section4" class="container-fluid">
-        <div class="topic ">Hello</div>
+        <div class="topic gradientFont">Our Presentation</div>
+        <div class="flex-container-team">
 
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSgdTdARHZo0BrukuLw3wdF6qvZjPNuY3yf1JgVMAAUzQRFTzXwS8fKuc7_nOnUDgzKnDIiaop3NMvi/embed?start=true&loop=true&delayms=7000" frameborder="0" width="900" height="450" allowfullscreen="true" mozallowfullscreen="true"
+                webkitallowfullscreen="true"></iframe>
+        </div>
     </div>
 
     <!-- section 5 -->
     <div id="section5" class="container-fluid">
-        <div class="topic ">THANKYOUUUU</div>
+        <div class="topic gradientFont">GITHUB REPOSITORY</div>
+        <div class="flex-container-team">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/static/Octocat.png" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back flex-container-team">
+                        <h1> <a href="https://github.com/tanyagarg2509/Virago_MLProject" target="_blank"> Team Virago </a></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    </div>
     </div>
     <footer>
         <h4 id="footerTitle">Made with ❤️ by team VIRAGO</h4>

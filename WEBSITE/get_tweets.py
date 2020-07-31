@@ -22,9 +22,7 @@ def get_related_tweets(text_query):
         for tweet in api.search(q=text_query, count=count):
             print(tweet.text)
             # Adding to list that contains all tweets
-            tweets_list.append({'created_at': tweet.created_at,
-                                'tweet_id': tweet.id,
-                                'tweet_text': tweet.text})
+            tweets_list.append({'tweet_text': tweet.text})
         return pd.DataFrame.from_dict(tweets_list)
 
     except BaseException as e:

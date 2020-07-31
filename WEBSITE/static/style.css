@@ -25,14 +25,15 @@ a:hover {
 }
 
 #results {
+    margin-top: 0px;
     padding: 20px;
     background-color: #eee;
-    width: 700px;
-    height: 300px;
+    height: auto;
+    width: 800px;
+    overflow-x: scroll;
     color: #fd98a7;
     font-weight: bolder;
     border-radius: 10px;
-    overflow-y: scroll;
 }
 
 

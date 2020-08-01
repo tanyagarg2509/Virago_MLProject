@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #FD98A7;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+#results {
+    margin-top: 0px;
+    padding: 20px;
+    background-color: #eee;
+    height: auto;
+    width: 800px;
+    overflow-x: scroll;
+    color: #fd98a7;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+#results::-webkit-scrollbar {
+    display: none;
+}
+
+#results {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.navbar {
+    /* border-radius: 5px; */
+    padding: 0 10px;
+    padding-top: 5px;
+}
+
+p,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-family: "Bebas Neue", cursive;
+}
+
+
+/* nav heading left */
+
+#mainHeading {
+    font-weight: bolder;
+    font-size: 4rem;
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+    color: #FD98A7;
+    margin-right: 40px;
+    padding-left: 50px;
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: white;
+    font-family: "Bebas Neue", cursive;
+    font-size: 2rem;
+    margin-right: 30px;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+    color: #FD98A7;
+    font-weight: bolder;
+    cursor: pointer;
+    /* font-size: 3rem; */
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+    color: black;
+    background-color: #FD98A7;
+}
+
+
+/* search section */
+
+#section {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    min-height: 100vh;
+    color: #fff;
+    background-image: url('/static/background2.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topic {
+    margin-top: 20px;
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+    font-family: "Bebas Neue", cursive;
+}
+
+.flex-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.flex-container1 .searchButton {
+    width: 600px;
+    height: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    .flex-container1 .searchButton {
+        width: 250px;
+    }
+}
+
+#myIcon {
+    border-radius: 20px;
+    background-color: #fff;
+    color: black;
+    height: 40px;
+    text-align: center;
+}
+
+#myIcon:hover {
+    cursor: pointer;
+    /* border: black; */
+}
+
+.input {
+    border-radius: 20px;
+    height: 40px;
+}
+
+.input:focus {
+    outline: none !important;
+    border: 2px solid #FD98A7;
+    box-shadow: 0 0 10px white;
+}
+
+
+/* ABOUT US SECTION */
+
+#section1 {
+    padding-top: 50px;
+    min-height: 100vh;
+    color: #fff;
+    padding: 10px;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+#section1 div {
+    color: black;
+}
+
+.gradientFont {
+    background: -webkit-linear-gradient(left, #fd98a7, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+mark {
+    color: #fd98a7;
+    opacity: 1;
+}
+
+.myROw {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.aboutImage {
+    width: 400px;
+    height: 250px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutImage {
+        width: 300px;
+    }
+}
+
+
+/* TEAM SECTION */
+
+#section2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    color: black;
+    background-image: url('/static/rm21-color-sasi-02_1.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.team-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    /* background-color: DodgerBlue; */
+}
+
+.card {
+    text-align: center;
+    padding: 20px 5px 5px 20px;
+    margin: 20px 5px 10px 5px;
+    width: 250px;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-radius: 50%;
+}
+
+.card h3 {
+    margin-top: 20px;
+    font-weight: 600;
+    color: #011c38;
+}
+
+.card .post {
+    font-weight: bold;
+    margin-top: 10px;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+#section3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    color: black;
+    background-color: white;
+    /* background-image: url('white.jpg'); */
+}
+
+#section4 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    color: #fff;
+    background-image: url('/static/rm21-color-sasi-02_1.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#section5 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    color: #fff;
+    background-color: white;
+    /* background-image: url('white.jpg'); */
+}
+
+#footerTitle {
+    padding: 20px;
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+    line-height: 30px;
+    text-align: center;
+    font-family: "Bebas Neue", cursive;
+    background-color: black;
+    margin-bottom: 0px;
+}
+
+#footerTitle:hover {
+    color: #FD98A7;
+}
+
+
+/*OUR TEAM CARDS STYLE*/
+
+.flex-container-team {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-team {
+    padding: 30px 0 40px;
+    margin-bottom: 30px;
+    background-color: #f7f5ec;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    /* width: 200px; */
+    height: 350px;
+}
+
+.our-team .picture {
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.our-team .picture::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #fd98a7;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+    height: 100%;
+}
+
+.our-team .picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fd98a7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.our-team .picture img {
+    /*width: 100%;
+    height: auto;*/
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+}
+
+.our-team .title {
+    display: block;
+    font-size: 15px;
+    color: #4e5052;
+    text-transform: capitalize;
+}
+
+.our-team .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #fd98a7;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+    bottom: 0;
+}
+
+.our-team .social li {
+    display: inline-block;
+}
+
+.our-team .social li a {
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.our-team .social li a:hover {
+    color: #fd98a7;
+    background-color: #f7f5ec;
+}
+
+.teamGif img {
+    margin: auto;
+    width: 300px;
+    height: 200px;
+}

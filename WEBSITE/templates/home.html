@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="/static/style.css" type="text/css" />
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100" class="container-fluid">
+    <div class="container-fluid">
+        <!-- navbar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+        </button>
+                    <a class="navbar-brand" id="mainHeading" href="#">VIRAGO</a>
+                </div>
+                <div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#section1">About The Project</a></li>
+                            <li><a href="#section2">Team</a></li>
+                            <li><a href="#section3">Mentors</a></li>
+                            <li><a href="#section4">Presentation</a></li>
+                            <li><a href="#section5">Github Repo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+    </div>
+
+    <!-- Front Page -->
+    <div id="section" class="container-fluid">
+        <div class="flex-container">
+            <div class="topic">
+                HATE SPEECH DETECTOR
+            </div>
+        </div>
+        <div class="flex-container1">
+            <form class="form-horizontal" id="idForm" action="http://localhost:5000/get" method="post">
+                <div class="form-group searchButton">
+
+                    <div class="col-sm-11">
+                        <input type="text" name="search" style="display: inline-block;" autocomplete="off" class="form-control input" id="search" placeholder="Enter The Keyword">
+                    </div>
+                    <label class="control-label col-sm-1" id="myIcon" for="search"><i class="fa fa-search" style="color:#fd98a7;"></i></label>
+                </div>
+            </form>
+
+        </div>
+        <div class="flex-box">
+            <div id="loader" style="position:relative;display:none;top:0px;">
+                <img src="/static/loader1.gif" alt="" height='50px' width="100px">
+            </div>
+            <div class="results" id="results" style="display: none;">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- end front page -->
+    <!-- section 1 -->
+    <div id="section1" class="container-fluid">
+        <div class="topic gradientFont">About The Project</div>
+        <div class="row myROw">
+            <div class="col-sm-4">
+                <img src="{{url_for( 'static', filename='TheOfficeExplain.gif' )}} " class="aboutImage " alt="TheOffice_MichealScott_IDon 'tGetIt">
+            </div>
+            <div class="col-sm-8">
+                <p><mark>Project Virago</mark> is a tool to fight against the <mark>hate and bullying</mark> that is spread on <mark>social media.</mark> This idea originated as a discussion over an incident of social media trolling experienced by one of
+                    our team members. Upon pondering over the issue, the team realised that there are numerous cases of hate speech, bullying and trolling that are overlooked mainly because there is no such tool available for <mark>fast detection and quick response</mark>                    of the issue that persists.</p>
+                <p>Initially, Virago was supposed to be a tool for detecting hate speech against women but due to technical purposes, we switched over to making it a more generalised model. The team will continue to work for the original idea and will begin
+                    working on the release Version2.0 of this tool once Version1.0 gets fully improvised.</p>
+                <p>Furthermore, Virago is all set to be released as a <mark>chrome extension</mark> to offer easy navigation and access to this extremely crucial asset.</p>
+            </div>
+        </div>
+        <div class="row myROw">
+
+            <div class="col-sm-8">
+                <p>If you are driven by the soul of Michael Scott and still aren't able to decipher what we meant, let us put that <mark>in simpler terms</mark> for you.</p>
+                <p>Virago will let you <mark>put in a keyword to search, tweets will be extracted </mark>(scraped, for intellectuals) from twitter and our <mark>machine learning algorithm will decide</mark> and let you know if the tweet is <mark>hate speech or not.</mark></p>
+                <p>Fascinating! Isn't it?</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="{{url_for( 'static', filename='TheOfficeExplain2.gif' )}}" class="aboutImage " alt="TheOffice_MichealScott_IDon 'tGetIt2">
+            </div>
+        </div>
+
+    </div>
+    <!-- section 1 end -->
+
+    <!-- section 2 -->
+    <div id="section2" class="container-fluid">
+        <div class="topic gradientFont">CREATORS OF VIRAGO
+
+        </div>
+        <div class="flex-container-team">
+
+            <!--Card of Tanya Garg begins-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3" style="order: 1;">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="/static/tanya.jpg" />
+                    </div>
+                    <div class="team-content ">
+                        <h3 class="name ">Tanya Garg</h3>
+                        <h4 class="title ">MCA, IGDTUW</h4>
+                    </div>
+                    <ul class="social ">
+                        <li>
+                            <a href="# " class="fa fa-github " aria-hidden="true "></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/tanya-garg-b51221145/ " class="fa fa-linkedin " aria-hidden="true " target="_blank "></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Card of Tanya Garg ends-->
+
+            <!--Card of Pooja Gera begins-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 " style="order: 2; ">
+                <div class="our-team ">
+                    <div class="picture ">
+                        <img class="img-fluid " src="/static/pooja.jpg">
+                    </div>
+                    <div class="team-content ">
+                        <h3 class="name ">Pooja Gera</h3>
+                        <h4 class="title ">B.Tech(IT), IGDTUW</h4>
+                    </div>
+                    <ul class="social ">
+                        <li>
+                            <a href="# " class="fa fa-github " aria-hidden="true "></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/pooja-gera-54509b132 " class="fa fa-linkedin " aria-hidden="true " target="_blank "></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Card of Pooja Gera ends-->
+
+            <!--Card of Tusharika begins-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 " style="order: 3; ">
+                <div class="our-team ">
+                    <div class="picture ">
+                        <img class="img-fluid " src="/static/tusharika.jpg" />
+                    </div>
+                    <div class="team-content ">
+                        <h3 class="name ">Tusharika Mehta</h3>
+                        <h4 class="title ">B.Tech, IGDTUW</h4>
+                    </div>
+                    <ul class="social ">
+                        <li>
+                            <a href="# " class="fa fa-github " aria-hidden="true "></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/tusharika-mehta-81391219a " class="fa fa-linkedin " aria-hidden="true " target="_blank "></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Card of Tusharika Mehta ends-->
+
+            <!--Card of Anshee Mongia begins-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 " style="order: 4; ">
+                <div class="our-team ">
+                    <div class="picture ">
+                        <img class="img-fluid " src="/static/anshee.jpg" />
+                    </div>
+                    <div class="team-content ">
+                        <h3 class="name ">Anshee Mongia</h3>
+                        <h4 class="title ">B.Tech, IGDTUW</h4>
+                    </div>
+                    <ul class="social ">
+                        <li>
+                            <a href="# " class="fa fa-github " aria-hidden="true "></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/anshee-mongia-1a2195191 " class="fa fa-linkedin " aria-hidden="true " target="_blank "></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Card of Anshee Mongia ends-->
+            <!--Card of Sanchita Singh begins-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 " style="order: 5; ">
+                <div class="our-team ">
+                    <div class="picture ">
+                        <img class="img-fluid " src="/static/sanchita.jpg" />
+                    </div>
+                    <div class="team-content ">
+                        <h3 class="name ">Sanchita Singh</h3>
+                        <h4 class="title ">B.Tech, IGDTUW</h4>
+                    </div>
+                    <ul class="social ">
+                        <li>
+                            <a href="# " class="fa fa-github " aria-hidden="true "></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/sanchita-singh-05183b190 " class="fa fa-linkedin " aria-hidden="true " target="_blank "></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Card of Sanchita Singh ends-->
+
+            <!--Card of Anjali begins-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 " style="order: 6; ">
+                <div class="our-team ">
+                    <div class="picture ">
+                        <img class="img-fluid " src="/static/anjali.jpg" />
+                    </div>
+                    <div class="team-content ">
+                        <h3 class="name ">Anjali</h3>
+                        <h4 class="title ">PhD., Kannur University</h4>
+                    </div>
+                    <ul class="social ">
+                        <li>
+                            <a href="# " class="fa fa-github " aria-hidden="true "></a>
+                        </li>
+                        <li>
+                            <a href="# " class="fa fa-linkedin " aria-hidden="true " target="_blank "></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Card of Anjali ends-->
+
+        </div>
+        <div class="flex-container-team ">
+            <div class="teamGif ">
+                <img src="/static/team.gif">
+            </div>
+        </div>
+
+
+    </div>
+    <!-- section 2 end -->
+
+    <!--  section 3 -->
+    <div id="section3" class="container-fluid">
+        <div class="topic gradientFont ">OUR MENTORS</div>
+        <div class="flex-container-team ">
+            <!--Card of Rishabh Sir begins-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 " style="order: 1; ">
+                <div class="our-team ">
+                    <div class="picture ">
+                        <img class="img-fluid " src="/static/Rishabh.jpg" />
+                    </div>
+                    <div class="team-content ">
+                        <h3 class="name ">Mr. Rishabh Kaushal</h3>
+                        <h4 class="title ">Assistant Professor,IT Department, IGDTUW</h4>
+                    </div>
+                    <ul class="social ">
+                        <li>
+                            <a href="# " class="fa fa-github " aria-hidden="true "></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/rishabhkaushal/ " class="fa fa-linkedin " aria-hidden="true " target="_blank "></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Card of Rishabh Sir ends-->
+
+            <!--Card of Hitkul Sir begins-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 " style="order: 2; ">
+                <div class="our-team ">
+                    <div class="picture ">
+                        <img class="img-fluid " src="/static/hitkul.jpg" />
+                    </div>
+                    <div class="team-content ">
+                        <h3 class="name ">Mr. Hitkul Jangid</h3>
+                        <h4 class="title ">Phd Researcher at MIDAS@IIITD and Precog@IIITD</h4>
+                    </div>
+                    <ul class="social ">
+                        <li>
+                            <a href="# " class="fa fa-github " aria-hidden="true "></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/hitkujangid/ " class="fa fa-linkedin " aria-hidden="true " target="_blank "></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Card of Hitkul Sir ends-->
+
+            <!--Card of Saurabh Sir begins-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 " style="order: 3; ">
+                <div class="our-team ">
+                    <div class="picture ">
+                        <img class="img-fluid " src="/static/saurabh.jpg" />
+                    </div>
+                    <div class="team-content ">
+                        <h3 class="name ">Mr. Saurabh Gupta</h3>
+                        <h4 class="title ">ABB PhD Fellow</h4>
+                    </div>
+                    <ul class="social ">
+                        <li>
+                            <a href="# " class="fa fa-github " aria-hidden="true "></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/reallysaurabh/ " class="fa fa-linkedin " aria-hidden="true " target="_blank "></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Card of Saurabh Sir ends-->
+        </div>
+    </div>
+    <!-- section 3 end -->
+
+    <style>
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+        
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        .flip-card-front,
+        .flip-card-back {
+            background-color: #fd98a7;
+            color: black;
+            padding: 30px;
+            border-radius: 10px;
+            height: 350px;
+            width: 350px;
+        }
+        
+        .flip-card-back {
+            background-image: url('/static/rm21-color-sasi-02_1.jpg');
+            background-position: center;
+            background-repeat: repeat;
+            background-size: cover;
+            color: #fd98a7;
+            text-align: center;
+            font-weight: bolder;
+            transform: rotateY(180deg);
+        }
+    </style>
+    <!-- section 4  -->
+    <div id="section4" class="container-fluid">
+        <div class="topic gradientFont">Our Presentation</div>
+        <div class="flex-container-team">
+
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSgdTdARHZo0BrukuLw3wdF6qvZjPNuY3yf1JgVMAAUzQRFTzXwS8fKuc7_nOnUDgzKnDIiaop3NMvi/embed?start=true&loop=true&delayms=5000" frameborder="0" width="900" height="450" allowfullscreen="true" mozallowfullscreen="true"
+                webkitallowfullscreen="true"></iframe>
+        </div>
+    </div>
+
+    <!-- section 5 -->
+    <div id="section5" class="container-fluid">
+        <div class="topic gradientFont">GITHUB REPOSITORY</div>
+        <div class="flex-container-team">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/static/Octocat.png" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back flex-container-team">
+                        <h1> <a href="https://github.com/tanyagarg2509/Virago_MLProject" target="_blank"> Team Virago </a></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <footer>
+        <h4 id="footerTitle">Made with ❤️ by team VIRAGO</h4>
+    </footer>
+</body>
+<script>
+    // this is the id of the form
+    $("#idForm").submit(function(e) {
+        $('#results').css("display", "none");
+        $('#loader').css("display", "block");
+        e.preventDefault(); // avoid to execute the actual submit of the form.
+
+        var form = $(this);
+        var url = form.attr('action');
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: form.serialize(),
+            success: function(data) {
+                $('#loader').css("display", "none");
+                $('#results').css("display", "block");
+                $('#results').html(data);
+            }
+        });
+
+
+    });
+</script>
+
+</html>
+
+<!--  -->
